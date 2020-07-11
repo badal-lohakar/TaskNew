@@ -1,0 +1,42 @@
+$color-primary : #b90637;
+.wrapper{
+    display: flex;
+    &-sidemenu{
+        width: 17%;
+        height: 100vh;
+        background: $color-primary;
+        .sidemenu-logo{
+            background: white;
+            text-align: center;
+            border-right: 2px solid $color-primary;
+            img{
+                width: 200px;
+            }
+        }
+        .sidemenu-list{
+            margin-top: 2px;
+            ul{
+                padding-inline-start: 0px;
+                li{
+                    list-style-type: none;
+                    padding: 5px 0px 5px 40px;
+                    cursor: pointer;
+                    color: white;
+                    border-bottom: 1px solid #d82959;
+                    transition: 0.5s all;
+                }
+                li:hover{
+                   background: white;
+                   border-right: 2px solid $color-primary;
+                   color: $color-primary;
+                }
+            }
+        }
+    }
+    &-menu-display{
+        width: 83%;
+        height: 100vh;
+        border-top: 2px solid $color-primary;
+        background: white;
+    }
+}

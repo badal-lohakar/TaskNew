@@ -1,0 +1,46 @@
+
+<div class="input-search">
+  <input type="text" class="input-search-box" #searchValue  s
+   placeholder="Enter Search Value base on Name OR City">
+</div>
+
+<table border="1">
+  <tr>
+    <th>
+      ID
+    </th>
+    <th>
+      Name
+     
+    </th>
+    <th>
+      Phone
+    </th>
+    <th>
+      City
+     
+    </th>
+    <th>
+      Address 1
+    </th>
+    <th>
+      Address 2
+    </th>
+    <th>
+      Postal Code
+    </th>
+    <th>
+      Edit
+    </th>
+  </tr>
+  <tr *ngFor="let list of employeeData">
+    <td>{{list.id}}</td>
+    <td>{{list.name}}</td>
+    <td >{{checkPhone(list.phone)}}</td>
+    <td> {{list.address.city}}</td>
+    <td>{{list.address.address_line1}}</td>
+    <td>{{list.address.address_line2}}</td>
+    <td>{{list.address.postal_code}}</td>
+    <td class="edit" (click)="editUserData(list.id)">Edit</td>
+  </tr>
+</table>

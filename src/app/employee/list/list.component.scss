@@ -1,0 +1,35 @@
+@import '../../app.component.scss';
+.input-search{
+    text-align: center;
+    &-box{
+        width: 70%;
+        margin: 1rem 0rem;
+        padding: 0.4rem 0.5rem;
+    }
+}
+table{
+    width: 90%;
+    margin: auto;
+   tr{
+       th{
+           padding-left: 5px;
+           color: $color-primary;
+           position: relative;
+           i{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            cursor: pointer;
+           }
+       }
+       td{
+           padding-left: 5px;
+       }
+       .edit:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+       }
+   }
+}

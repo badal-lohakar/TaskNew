@@ -1,0 +1,42 @@
+@import '../../app.component.scss';
+#toast-container > div {
+    opacity:1 !important;
+}
+.add-data-form{
+    width: 70%;
+    margin:5rem auto;
+    .input-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+        .error{
+            color: red;
+            display: block;
+            font-size: 14px;
+        }
+        &-h{
+            width: 48%;
+            margin-bottom: 10px;
+            .f-w{
+                display: block;
+                width: 100%;
+            }
+            input{
+                padding: 5px;
+            }
+            input:focus{
+               outline-color: $color-primary;
+            }
+        }
+        .saveData{
+            width: 100px;
+            background: $color-primary;
+            border: none;
+            color: white;
+        }
+        .saveData:focus{
+            outline-color: none;
+        }
+    }
+}
